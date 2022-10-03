@@ -1,6 +1,13 @@
 """Frequencies function."""
 """ENTER YOUR SOLUTION HERE!"""
 
+
+# importing the module
+import collections
+
+
+
+# Function 1
 def frequencies(items):
     frequencies = {}
     
@@ -17,3 +24,17 @@ def frequencies(items):
           frequencies[item] = 1
     
     return frequencies
+
+
+
+# Function 2
+def frequencies2(items):
+
+    # using Counter to find frequency of elements
+    frequencies = collections.Counter(items)
+
+    # return the frequencies
+    return (dict(frequencies))
+
+
+
